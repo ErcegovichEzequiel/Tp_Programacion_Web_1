@@ -34,7 +34,6 @@
 
 .imgContainer .imgTextContainer {
     display: flex;
-    align-items: justify;
     justify-content: center;
     width: 60%;
     padding: 2%;

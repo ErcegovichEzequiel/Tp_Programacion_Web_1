@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* NAVEGADOR INTERNO */
+.spanContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 1%;
+    background-color: #55ff99;
+    border-bottom: black 2px solid;
+}
+
+.spanContainer a {
+    color: black;
+    font-size: 120%;
+    margin: 0 1%;
+}
+
+/* IMAGEN */
+.imgContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.imgContainer .imgTextContainer {
+    display: flex;
+    align-items: justify;
+    justify-content: center;
+    width: 60%;
+    padding: 2%;
+}
+
+.imgContainer .imgTextContainer .imgText {
+    width: 100%;
+    font-size: 120%;
+    text-align: center;
+    line-height: 150%;
+}
+
+.imgContainer .imgMetodologias {
+    width: 40%;
+}
+
+/* METODOLOGIAS */
+.metodologiasContainer {
+    max-width: 99%;
+    padding: 2%;
+}
+
+.metodologiasContainer #metodologiasCards .col .card {
+    height: 100%;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 375px) and (max-width: 700px) {
+    .imgContainer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .imgContainer .imgTextContainer {
+        width: 90%;
+    }
+
+    .imgContainer .imgTextContainer .imgText {
+        font-size: 100%;
+        text-align: justify;
+    }
+
+    .imgContainer .imgMetodologias {
+        width: 90%;
+    }
+
+    .cardContainer .card .cardImgText,
+    .cardContainer .card .cardImgText1 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 1%;
+    }
+
+    .cardContainer .card .cardImg {
+        width: 90%;
+        margin-bottom: 3%;
+        border-radius: 5px;
+        margin-right: 1%;
+    }
+
+    .cardContainer .card p {
+        font-size: 100%;
+        width: 90%;
+        text-align: justify;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 1024px) {
+    .imgContainer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .imgContainer .imgTextContainer {
+        width: 90%;
+    }
+
+    .imgContainer .imgTextContainer .imgText {
+        font-size: 100%;
+        text-align: justify;
+    }
+
+    .imgContainer .imgMetodologias {
+        width: 90%;
+    }
+
+    .cardContainer .card .cardImgText,
+    .cardContainer .card .cardImgText1 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 1%;
+    }
+
+    .cardContainer .card .cardImg {
+        width: 90%;
+        margin-bottom: 3%;
+        border-radius: 5px;
+        margin-right: 1%;
+    }
+
+    .cardContainer .card p {
+        font-size: 100%;
+        width: 90%;
+        text-align: justify;
+    }
+}

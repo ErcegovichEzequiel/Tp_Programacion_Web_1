@@ -1,0 +1,48 @@
+.nav {
+    display: flex;
+    flex-direction: row ;
+    border-bottom: black 2px solid;
+}
+
+.nav .logoContainer {
+    width: 5%;
+    height: auto;
+}
+
+.nav .logoContainer .logo {
+    width: 100%;
+}
+
+.nav div a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+    display: inline-block;
+}
+
+.nav div a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #FFA500;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+    transform-origin: bottom left;
+}
+
+.nav div a:hover::after {
+    transform: scaleX(1);
+}
+
+@media (min-width: 375px) and (max-width: 800px) {
+    .nav {
+        align-items: center;
+    }
+
+    .nav .logoContainer {
+        width: 25%;
+    }    
+} 

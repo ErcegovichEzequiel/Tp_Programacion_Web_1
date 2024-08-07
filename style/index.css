@@ -1,280 +1,95 @@
-body {
-    background-color: #383636;
-    padding: 1%;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
-/* Encabezado y barra de navegación  */
-.header {
-    background-color: #e8e0ae;
-    text-align: center;
-    color: rgb(38, 38, 38);
-    padding: 1%;
-    margin-left: 2%;
-    font-family: 'Georgia', Times, serif;
-    width: 94%;
-    /* border-radius: 5px; */
-    text-decoration: :;
-
-}
-
-.navbar {
-    background-color: #7c8569;
-    height: auto;
-    width: 98%;
-    border-radius: 5px;
-    margin-left: 1%;
-    padding: 1px;
-    box-shadow: 1px 2px 3px black;
-}
-
-.navbar ul {
-    list-style: none;
+.headerContainer {
     display: flex;
     justify-content: space-evenly;
 }
-body, header{
-    margin: 2;
-}
 
-.navbar .navbar-li a {
-    text-decoration: none;
-    color: beige;
-    font-size: 20px;
-}
-
-/* Banner de bienvenida */
-.banner-section {
-    width: 98%;
-    margin-top: 2%;
-    margin-left: 1%;
-    border-radius: 5px;
-    background-color: #e8e0ae;
-    height: auto;
-    display: inline-flex;
-}
-
-.description-web {
-    color: rgb(38, 38, 38);
-    text-align: justify;
-    width: 50%;
-    margin: 2%;
-    font-size: 18px;
-}
-
-.banner-section .banner {
-    width: 40%;
-    margin: 2%;
-    height: 300px;
-    margin-top: 40px;
-    border-radius: 5px;
-}
-
-/* Noticias */
-.titulo-noticias {
-    color: rgb(38, 38, 38);
-    text-align: center;
-    font-size: 25px;
-    margin-bottom: 50px;
-    display: block;
-    margin-top: 2%;
-    width: 98%;
-    margin-left: 1%;
-    border-radius: 5px;
-    background-color: #e8e0ae;
-    margin-bottom: 0;
-    box-shadow: 1px 2px 3px black;
-}
-
-.box-noticias {
-    background-color: #7c8569;
-    padding: 1%;
-    width: 96%;
-    margin-left: 1%;
-    border-radius: 5px;
-    height: auto;
-    margin-top: 0;
-    margin-bottom: -1%;
-}
-
-.box-noticias .noticias {
-    width: 35%;
-    text-align: justify;
-    height: 250px;
-    background-color: #e8e0ae;
-    padding: 10px;
-    margin: 3% 5% 3% 7%;
-    box-shadow: 1px 2px 3px black;
-    border-radius: 5px;
-    display: inline-table;
-}
-
-.box-noticias .noticias h3 {
-    text-align: center;
-    font-size: 20px;
-    text-decoration: underline;
-}
-
-/* Historias */
-.section-historia {
-    background-color: #a4ab80;
-    width: 96%;
-    margin-left: 1%;
-    border-radius: 5px;
-    height: auto;
-    padding: 1%;
-    margin-top: 2%;
-    display: inline-flex;
-}
-
-.section-historia .historias {
-    background-color: #e8e0ae;
-    width: 50%;
-    border-radius: 5px;
-    margin-left: 1%;
-    padding: 10px;
-    text-align: justify;
-    color: rgb(38, 38, 38);
-    font-size: 17px;
-}
-
-.section-historia .img-nosoros {
-    width: 45%;
-    margin-left: 1%;
-    border-radius: 5px;
-    height: 20%;
-}
-
-/* Historias Marcas */
-.historias-marcas {
-    background-color: #7c8569;
-    width: 96%;
-    margin-left: 1%;
-    height: auto;
-    padding: 1%;
-    margin-top: 2%;
+.headerContainer .sectionContainer {
+    width: 80%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-bottom: -1%;
-}
+    flex-direction: column;
+    align-items: center;
+    padding: 1%;
+    }
 
-.historias-marcas .section-historias-empresas {
-    background-color: #a4ab80;
-    width: 30%;
-    padding: 10px;
-    box-shadow: 1px 2px 3px black;
-    border-radius: 5px;
-    height: auto;
-    margin-top: 1%;
-}
-
-.historias-marcas .section-historias-empresas .img-marcas-historias {
+.headerContainer .sectionContainer .sectionIndex {
     width: 100%;
-}
-
-.historias-marcas .section-historias-empresas .articulo-historia-marcas {
-    background-color: #e8e0ae;
-    width: 95%;
-    padding: 10px;
-    text-align: justify;
-    color: rgb(38, 38, 38);
-    font-size: 17px;
-}
-
-/* Tienda */
-/* Banner Mercado Pago */
-.banner-mercadopago {
-    margin-top: 2%;
-    width: 96%;
-    margin-left: 1%;
     display: flex;
-    justify-content: center;
-    height: auto;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3%;
 }
 
-.banner-mercadopago img {
-    width: 60%;
-    border-radius: 5px;
-    box-shadow: 1px 2px 3px black;
+.headerContainer .sectionContainer .sectionIndex h2,
+h3 {
+    text-align: center;
+    margin-bottom: 2%;
+    font-size: 150%;
+
 }
 
-/* Productos Tienda */
-.div-tienda{
-    background-color: #7c8569;
-    width: 96%;
-    margin-left: 1%;
-    height: auto;
+.headerContainer .sectionContainer .sectionIndex p {
+    text-align: justify;
+    margin-bottom: 2%;
+    line-height: 140%;
+    font-size: 120%;
+}
+
+/* ARTICLES */
+.headerContainer .articlesContainer {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 1%;
-    margin-top: 2%;
-    margin-bottom: -1%;   
+    /* background-color: #A9A9A9; */
+    height: 100%;
 }
-.div-tienda .section-producto{
-    background-color: #a4ab80;
-    width: 98%;
-    padding: 10px;
-    box-shadow: 1px 2px 3px black;
-    border-radius: 5px;
-    height: auto;
-    margin-top: 1%;
-    display: flex;
-}
-.div-tienda .section-producto .img-producto{
-    width: 30%;
-    margin-right: 10px;
-    height: 285px;
-}
-.div-tienda .section-producto .producto{
-    background-color: #e8e0ae;
-    width: 95%;
-    padding: 10px;
-    text-align: justify;
-    color: rgb(38, 38, 38);
-    font-size: 20px;
-}
-.div-tienda .section-producto .comprar{
-    color: rgb(38, 38, 38);
-    font-size: 30px;
-    text-decoration: none;
-    border: solid 1px rgb(38, 38, 38);
-    padding: 3px;
-    border-radius: 5px;
-    background-color: #de733e;
-    margin-left: 82%;
+.articlesContainer .card{
+    margin-bottom: 2%;
 }
 
-/* Footer */
-.footer-general {
-    background-color: #e8e0ae;
-    width: 95%;
-    height: auto;
-    border-radius: 5px;
-    margin-left: 1%;
-    padding: 20px;
-    margin-top: 2%;
-}
-
-.footer-general h5 {
-    font-size: 35px;
-    color: rgb(38, 38, 38);
-    margin: 0;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.footer-general .icos-redes-sociales {
+.headerContainer .articlesContainer .articleIndex {
     width: 100%;
-    text-align: center;
+    margin-bottom: 5%;
 }
 
-.footer-general .icos-redes-sociales .redes-sociales {
-    margin: 20px;
-}
-
-.footer-general .derechos-autor {
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    color: #737272;
-    text-align: center;
-    margin-top: 20px;
+.articlesContainer .articleIndex .ancorArticle {
+    /* text-decoration: none; */
+    color: #1b8c1b;
+    margin-bottom: 5%;
+    font-size: 130%;
     font-weight: bold;
+}
+
+.articlesContainer .articleIndex p {
+    text-align: justify;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    line-height: 120%;
+}
+
+@media (min-width: 375px) and (max-width: 800px) {
+    .headerContainer {
+        flex-direction: column;
+    }
+
+    .headerContainer .sectionContainer {
+        margin-top: 3%;
+        width: 90%;
+    }
+
+    .headerContainer .sectionContainer .sectionIndex img {
+        width: 80%;
+    }
+
+    .headerContainer .articlesContainer {
+        width: 90%;
+    }
 }

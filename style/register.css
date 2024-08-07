@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.registerContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 3%;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.registerContainer .registerInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+    padding: 3%;
+}
+
+.registerContainer .registerInfo p {
+    text-align: center;
+    width: 100%;
+    font-size: 120%;
+    line-height: 30px;
+    margin-bottom: 5%;
+}
+
+.registerContainer .registerInfo .registerImgContainer {
+    width: 100%;
+}
+
+.registerImg {
+    border-radius: 5%;
+    width: 100%;
+}
+
+.registerContainer .registerFormContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #55ff99;
+    border-radius: 5px;
+    padding: 3%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.registerContainer .registerFormContainer h2 {
+    text-align: center;
+    margin-bottom: 4%;
+    font-size: 200%;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-decoration-line: underline;
+    text-decoration-style: double;
+}
+
+.registerContainer .registerFormContainer .registerForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 3%;
+}
+
+.registerContainer .registerFormContainer .registerForm div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 3%;
+}
+
+.registerContainer .registerFormContainer .registerForm .sexo {
+    width: 60%;
+    font-size: 120%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1%;
+}
+
+
+.registerContainer .registerFormContainer .registerForm .selectoresRegister div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 3%;
+    font-size: 80%;
+}
+
+.registerContainer .registerFormContainer .registerForm .selectoresRegister div input {
+    width: 10%;
+    padding: 1%;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-left: 2%;
+    font-size: 150%;
+}
+
+.registerContainer .registerFormContainer .registerForm .selectoresRegister div label {
+    font-size: 170%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+
+}
+
+.registerContainer .registerFormContainer .registerForm label {
+    text-align: center;
+    margin-bottom: 2%;
+    margin-top: 1%;
+    font-size: 150%;
+}
+
+.registerContainer .registerFormContainer .registerForm input {
+    width: 60%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.registerContainer .registerFormContainer .registerForm a {
+    width: 20%;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 45%;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+@media (min-width: 375px) and (max-width: 700px) {
+    .registerContainer {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 701px) {
+
+    .registerContainer .registerFormContainer .registerForm .selectoresRegister div input {
+        width: 10%;
+    }
+
+    .button {
+        width: 50%;
+    }
+
+    .registerContainer .registerFormContainer .registerForm input {
+        width: 100%;
+    }
+
+    .registerContainer .registerFormContainer .registerForm .sexo {
+        width: 100%;
+    }
+
+}
